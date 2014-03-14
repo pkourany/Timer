@@ -5,11 +5,12 @@
 //
 //Beerware license: Free for any and all purposes, but if you find it
 //useful AND we actually meet someday, you can buy me a beer!
+//Adapted for Spark Core by Paul Kourany, March 14, 2014
 
 #include "Timer.h"                     //http://github.com/JChristensen/Timer
 
-const int LED1 = 8;                    //connect one LED to this pin (with appropriate current-limiting resistor of course)
-const int LED2 = 9;                    //connect another LED to this pin (don't forget the resistor)
+const int LED1 = D4;                    //connect one LED to this pin (with appropriate current-limiting resistor of course)
+const int LED2 = D5;                    //connect another LED to this pin (don't forget the resistor)
 const unsigned long PERIOD1 = 1000;    //one second
 const unsigned long PERIOD2 = 10000;   //ten seconds
 Timer t;                               //instantiate the timer object
