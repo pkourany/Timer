@@ -27,3 +27,5 @@ Changed data types of variables and functions:
  o 19Oct2013: This is the last v1.x release. It will continue to be available on GitHub
    as a branch named v1.3. Future development will continue with Sandy Walsh's v2.0 which
    can pass context (timer ID, etc.) to the callback functions.
+   
+Adapted v1.3 for Spark Core by Paul Kourany, March 14, 2014
