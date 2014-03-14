@@ -1,4 +1,5 @@
 //Adapted for Spark Core by Paul Kourany, March 14, 2014
+//Uses Spark LED on pin D7
 
 #include "Timer.h"
 
@@ -14,7 +15,7 @@ void setup()
   Serial.println(tickEvent);
   
   pinMode(D7, OUTPUT);
-  ledEvent = t.oscillate(13, 50, HIGH);
+  ledEvent = t.oscillate(D7, 50, HIGH);
   Serial.print("LED event started id=");
   Serial.println(ledEvent);
   
@@ -40,5 +41,5 @@ void doAfter()
 {
   Serial.println("stop the led event");
   t.stop(ledEvent);
-  t.oscillate(13, 500, HIGH, 5);
+  t.oscillate(D7, 500, HIGH, 5);
 }
