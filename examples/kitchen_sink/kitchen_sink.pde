@@ -1,3 +1,5 @@
+//Adapted for Spark Core by Paul Kourany, March 14, 2014
+
 #include "Timer.h"
 
 Timer t;
@@ -11,7 +13,7 @@ void setup()
   Serial.print("2 second tick started id=");
   Serial.println(tickEvent);
   
-  pinMode(13, OUTPUT);
+  pinMode(D7, OUTPUT);
   ledEvent = t.oscillate(13, 50, HIGH);
   Serial.print("LED event started id=");
   Serial.println(ledEvent);
